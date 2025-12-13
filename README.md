@@ -40,6 +40,7 @@ llm-toolkit/
 |-------|-------------|---------|
 | [llms-txt-generator](skills/llms-txt-generator/) | Genera documentación optimizada para LLMs siguiendo el estándar llms.txt | "crear llms.txt", "generate LLM docs" |
 | [claude-md-writer](skills/claude-md-writer/) | Guía para escribir y mejorar archivos CLAUDE.md siguiendo best practices | "crear CLAUDE.md", "revisar CLAUDE.md" |
+| [nextjs-project-starter](skills/nextjs-project-starter/) | Crea proyectos Next.js con stack configurable (Mantine, Supabase, Zustand) | "crear proyecto", "new nextjs project" |
 
 ## Commands Disponibles
 

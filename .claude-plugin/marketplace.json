@@ -20,6 +20,14 @@
       "version": "1.0.0",
       "license": "MIT",
       "keywords": ["claude-md", "documentation", "best-practices"]
+    },
+    {
+      "name": "nextjs-project-starter",
+      "source": "./skills/nextjs-project-starter",
+      "description": "Crea proyectos Next.js con stack configurable (Mantine, Supabase, Zustand). Busca últimas versiones y docs antes de instalar.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["nextjs", "mantine", "supabase", "project-starter", "boilerplate"]
     }
   ]
 }
