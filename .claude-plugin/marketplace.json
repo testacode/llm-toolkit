@@ -1,0 +1,17 @@
+{
+  "name": "llm-toolkit",
+  "owner": {
+    "name": "Testacode"
+  },
+  "description": "Herramientas, configuraciones y extensiones para trabajar con LLMs",
+  "plugins": [
+    {
+      "name": "llms-txt-generator",
+      "source": "./skills/llms-txt-generator",
+      "description": "Genera documentación optimizada para LLMs siguiendo el estándar llms.txt",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["documentation", "llms-txt", "ai-docs"]
+    }
+  ]
+}
