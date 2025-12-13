@@ -12,6 +12,14 @@
       "version": "1.0.0",
       "license": "MIT",
       "keywords": ["documentation", "llms-txt", "ai-docs"]
+    },
+    {
+      "name": "claude-md-writer",
+      "source": "./skills/claude-md-writer",
+      "description": "Guía para escribir y mejorar archivos CLAUDE.md siguiendo best practices",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["claude-md", "documentation", "best-practices"]
     }
   ]
 }
