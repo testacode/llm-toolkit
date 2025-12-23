@@ -1,0 +1,136 @@
+{
+  "name": "llm-toolkit",
+  "version": "1.0.0",
+  "description": "Toolkit de productividad para Claude Code: skills, agents, commands y configuraciones para desarrollo con LLMs",
+  "author": {
+    "name": "Testacode"
+  },
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "llms-txt-generator",
+      "path": "./skills/llms-txt-generator",
+      "description": "Genera documentacion optimizada para LLMs siguiendo el estandar llms.txt"
+    },
+    {
+      "name": "claude-md-writer",
+      "path": "./skills/claude-md-writer",
+      "description": "Guia para escribir y mejorar archivos CLAUDE.md siguiendo best practices"
+    },
+    {
+      "name": "nextjs-project-starter",
+      "path": "./skills/nextjs-project-starter",
+      "description": "Crea proyectos Next.js con stack configurable (Mantine, Supabase, Zustand)"
+    }
+  ],
+  "commands": [
+    {
+      "name": "commit",
+      "path": "./commands/git/commit.md",
+      "description": "Genera commits convencionales siguiendo el estandar"
+    },
+    {
+      "name": "explain",
+      "path": "./commands/code/explain.md",
+      "description": "Explica codigo en detalle con contexto y ejemplos"
+    },
+    {
+      "name": "simplify",
+      "path": "./commands/code/simplify.md",
+      "description": "Simplifica y refactoriza codigo complejo"
+    },
+    {
+      "name": "translate",
+      "path": "./commands/code/translate.md",
+      "description": "Traduce codigo entre lenguajes de programacion"
+    },
+    {
+      "name": "diagram",
+      "path": "./commands/docs/diagram.md",
+      "description": "Genera diagramas ASCII y Mermaid"
+    },
+    {
+      "name": "document",
+      "path": "./commands/docs/document.md",
+      "description": "Genera documentacion automatica"
+    },
+    {
+      "name": "prototype",
+      "path": "./commands/dev/prototype.md",
+      "description": "Crea POCs rapidos en multiples lenguajes"
+    },
+    {
+      "name": "summary",
+      "path": "./commands/dev/summary.md",
+      "description": "Resume conversaciones y contexto"
+    }
+  ],
+  "agents": [
+    {
+      "name": "codebase-analyst",
+      "path": "./agents/codebase-analyst.md",
+      "description": "Analisis arqueologico de codigo y dependencias"
+    },
+    {
+      "name": "nodejs-expert",
+      "path": "./agents/nodejs-expert.md",
+      "description": "Especialista en Node.js, async y performance"
+    },
+    {
+      "name": "java-expert",
+      "path": "./agents/java-expert.md",
+      "description": "Especialista en Java moderno y patrones"
+    },
+    {
+      "name": "scala-expert",
+      "path": "./agents/scala-expert.md",
+      "description": "Especialista en Scala y programacion funcional"
+    },
+    {
+      "name": "vitest-expert",
+      "path": "./agents/vitest-expert.md",
+      "description": "Especialista en testing con Vitest"
+    },
+    {
+      "name": "tech-researcher",
+      "path": "./agents/tech-researcher.md",
+      "description": "Investigador de tecnologias y frameworks"
+    },
+    {
+      "name": "web-researcher",
+      "path": "./agents/web-researcher.md",
+      "description": "Investigacion web general"
+    },
+    {
+      "name": "github-actions-expert",
+      "path": "./agents/github-actions-expert.md",
+      "description": "Especialista en GitHub Actions y CI/CD"
+    },
+    {
+      "name": "grafana-expert",
+      "path": "./agents/grafana-expert.md",
+      "description": "Especialista en dashboards Grafana"
+    },
+    {
+      "name": "loki-expert",
+      "path": "./agents/loki-expert.md",
+      "description": "Especialista en agregacion de logs con Loki"
+    }
+  ],
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "description": "Documentacion actualizada para cualquier libreria - evita alucinaciones"
+    }
+  },
+  "tags": [
+    "productivity",
+    "llm",
+    "claude-code",
+    "skills",
+    "agents",
+    "commands",
+    "documentation"
+  ]
+}

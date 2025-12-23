@@ -1,0 +1,47 @@
+{
+  "_comment": "Template de configuracion para llm-toolkit. Copia este archivo a settings.json y personaliza.",
+
+  "permissions": {
+    "allow": [
+      "Skill(*)",
+      "Read(*)",
+      "Glob(*)",
+      "Grep(*)"
+    ],
+    "deny": []
+  },
+
+  "mcpServers": {
+    "_comment": "MCP servers recomendados. Descomentar los que quieras usar.",
+
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "_description": "Documentacion actualizada de librerias"
+    }
+  },
+
+  "disabledMcpjsonServers": [],
+
+  "_examples": {
+    "github_mcp": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "supabase_mcp": {
+      "command": "npx",
+      "args": ["-y", "@supabase/mcp-server-supabase"],
+      "env": {
+        "SUPABASE_URL": "${SUPABASE_URL}",
+        "SUPABASE_KEY": "${SUPABASE_KEY}"
+      }
+    },
+    "playwright_mcp": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    }
+  }
+}
