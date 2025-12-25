@@ -11,7 +11,8 @@ llm-toolkit/
 ├── skills/                 # Skills para Claude Code
 │   ├── llms-txt-generator/
 │   ├── claude-md-writer/
-│   └── nextjs-project-starter/
+│   ├── nextjs-project-starter/
+│   └── doc-writer/
 ├── agents/                 # Agentes especializados
 ├── commands/               # Slash commands organizados
 │   ├── git/               # commit
@@ -37,6 +38,7 @@ llm-toolkit/
 | [llms-txt-generator](skills/llms-txt-generator/) | Genera documentacion optimizada para LLMs siguiendo el estandar llms.txt | "crear llms.txt", "generate LLM docs" |
 | [claude-md-writer](skills/claude-md-writer/) | Guia para escribir y mejorar archivos CLAUDE.md siguiendo best practices | "crear CLAUDE.md", "revisar CLAUDE.md" |
 | [nextjs-project-starter](skills/nextjs-project-starter/) | Crea proyectos Next.js con stack configurable (Mantine, Supabase, Zustand) | "crear proyecto", "new nextjs project" |
+| [doc-writer](skills/doc-writer/) | Organiza specs, planes y docs tecnicos en docs/ con categorias y naming automatico | "escribir spec", "crear plan", "documentar ADR" |
 
 ## Commands Disponibles
 
