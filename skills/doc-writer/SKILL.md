@@ -43,27 +43,7 @@ Si es modo CREAR → continuar con Paso 1
 
 ## Proceso de Creación
 
-### Paso 1: Detectar contexto
-
-Determinar si es contexto **trabajo** o **personal**:
-
-```bash
-# Verificar directorio actual
-pwd
-
-# Buscar indicadores de proyecto corporativo
-ls .github/ .gitlab/ 2>/dev/null
-```
-
-**TRABAJO** si:
-- El directorio tiene estructura corporativa (múltiples owners, CI/CD complejo)
-- El proyecto tiene guías de contribución empresariales
-
-**PERSONAL** si:
-- Proyecto individual o side-project
-- Sin estructura corporativa evidente
-
-### Paso 2: Buscar estructura de docs existente
+### Paso 1: Buscar estructura de docs existente
 
 ```bash
 # Buscar carpeta docs
@@ -73,32 +53,32 @@ ls -la docs/ 2>/dev/null
 ls -d docs/*/ 2>/dev/null
 ```
 
-### Paso 3: Determinar categoria
+### Paso 2: Preguntar categoria al usuario
 
-**Si existen subcarpetas en docs/**: Usar las existentes como opciones.
+**Si existen subcarpetas en docs/**: Ofrecerlas como opciones.
 
-**Si no existen subcarpetas**, usar categorias base segun contexto:
+**Si no existen subcarpetas**, preguntar al usuario qué categorías quiere usar:
 
-#### Trabajo (estructura corporativa):
-| Categoria | Uso |
-|-----------|-----|
-| `backlog/` | Features pendientes, ideas futuras |
-| `work-in-progress/` | Documentacion de trabajo activo |
-| `completed/` | Features terminadas |
-| `history/` | Changelog, decisiones historicas |
-| `reference/` | Docs tecnicos de referencia |
-
-#### Personal:
 | Categoria | Uso |
 |-----------|-----|
 | `specs/` | Especificaciones de features/sistemas |
 | `plans/` | Planes de implementacion |
 | `architecture/` | ADRs, decisiones arquitectonicas |
 | `reference/` | Documentacion tecnica de referencia |
+| `backlog/` | Features pendientes, ideas futuras |
+| `work-in-progress/` | Documentacion de trabajo activo |
 
-**IMPORTANTE**: Si hay ambiguedad sobre la categoria, preguntar al usuario.
+Formato de pregunta:
+```
+¿En qué categoría va este documento?
+☐ specs/ - Especificaciones
+☐ plans/ - Planes de implementación
+☐ architecture/ - ADRs, decisiones
+☐ reference/ - Documentación de referencia
+☐ [Otra categoría]
+```
 
-### Paso 4: Generar nombre de archivo
+### Paso 3: Generar nombre de archivo
 
 Formato: `YYYY-MM-DD-HH-MM-<feature-name>.md`
 
@@ -107,7 +87,7 @@ Formato: `YYYY-MM-DD-HH-MM-<feature-name>.md`
 
 Ejemplo: `2025-12-25-14-30-user-authentication.md`
 
-### Paso 5: Crear el documento
+### Paso 4: Crear el documento
 
 1. Crear subcarpeta si no existe
 2. Aplicar template segun tipo de documento
@@ -317,11 +297,10 @@ Archivos reorganizados:
 Usuario: "Escribime una spec para el sistema de autenticacion"
 
 1. Detectar modo: CREAR (pide escribir algo nuevo)
-2. Detectar contexto: Personal (proyecto individual)
-3. Buscar docs/: Existe, tiene subcarpetas `specs/`, `plans/`
-4. Categoria: `specs/` (es una especificacion)
-5. Nombre: `2025-12-25-15-30-authentication-system.md`
-6. Crear: `docs/specs/2025-12-25-15-30-authentication-system.md` con Spec Template
+2. Buscar docs/: Existe, tiene subcarpetas `specs/`, `plans/`
+3. Preguntar categoría: "¿En qué categoría va?" → Usuario elige `specs/`
+4. Nombre: `2025-12-25-15-30-authentication-system.md`
+5. Crear: `docs/specs/2025-12-25-15-30-authentication-system.md` con Spec Template
 
 ### Ejemplo: Organizar documentos
 
