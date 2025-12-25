@@ -21,6 +21,11 @@
       "name": "nextjs-project-starter",
       "path": "./skills/nextjs-project-starter",
       "description": "Crea proyectos Next.js con stack configurable (Mantine, Supabase, Zustand)"
+    },
+    {
+      "name": "doc-writer",
+      "path": "./skills/doc-writer",
+      "description": "Organiza documentos de specs, planes y documentacion tecnica en docs/ con categorias y naming automatico"
     }
   ],
   "commands": [
